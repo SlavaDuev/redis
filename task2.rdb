@@ -1,0 +1,4 @@
+HMSET ratings mysql 10 postgresql 20 mongodb 30 redis 40
+HINCRBY ratings mysql 15
+ZREMRANGEBYRANK ratings -1 -1
+ZREVRANK ratings mysql
